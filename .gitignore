@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+
+/real_data/images/
+/real_data/frame.json
+/real_data/frames.json
+/result/
+
+*.pth
+*.pt
+*.ckpt
+.DS_Store
