@@ -88,10 +88,10 @@ CAM_BACK
 CAM_BACK_LEFT
 CAM_FRONT_LEFT
 ```
-
-By default, the runner looks for `real_data/frames.json`, then
-`real_data/frame.json`. The JSON may contain a `frame_id` and must contain a
-`cameras` object. Each camera entry must provide:
+See [example/real_data/frame.json](example/real_data/frame.json) for an example.
+By default, the runner looks for `real_data/frame.json`. The JSON may contain
+a `frame_id` and must contain a `cameras` object. Each camera entry must
+provide:
 
 - `image`: image path, absolute or relative to the JSON file.
 - `intrinsic`: a 3x3 camera intrinsic matrix.
@@ -129,9 +129,9 @@ NVIDIA Container Toolkit configuration.
 ## Run inference
 
 Put a trained occupancy checkpoint somewhere under the mounted workspace,
-for example at `checkpoints/surroundocc_occ.pth`. The Dockerfile does not
-download an occupancy checkpoint; the backbone pretraining weights are not a
-replacement for a trained occupancy checkpoint.
+for example at `checkpoints/surroundocc_occ.pth`. 
+You can find the checkpoint here: [checkpoint](https://drive.google.com/drive/folders/1prNP4thube42iDjbGkfPokEWk6nzOOhq)
+The Dockerfile does not download an occupancy checkpoint.
 
 From inside the container, run:
 

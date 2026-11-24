@@ -14,9 +14,7 @@ from SurroundOcc.tools.infer import (
 
 REPOSITORY_ROOT = Path(__file__).resolve().parent
 REAL_DATA_DIR = REPOSITORY_ROOT / "real_data"
-DEFAULT_FRAME_FILE = REAL_DATA_DIR / "frames.json"
-if not DEFAULT_FRAME_FILE.is_file():
-    DEFAULT_FRAME_FILE = REAL_DATA_DIR / "frame.json"
+DEFAULT_FRAME_FILE = REAL_DATA_DIR / "frame.json"
 DEFAULT_CONFIG = (
     REPOSITORY_ROOT / "SurroundOcc" / "projects" / "configs" /
     "surroundocc" / "surroundocc_inference.py"
